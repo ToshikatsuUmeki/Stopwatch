@@ -10,7 +10,7 @@ let timeoutID;
 function displayTime() {
   const currentTime = new Date(Date.now() - startTime + stopTime);
   time.textContent = new Date(currentTime).toISOString().slice(11, 19);
-  timeoutID = setTimeout(displayTime, 10);
+  timeoutID = setTimeout(displayTime, 100);
 }
 
 startButton.addEventListener('click', () => {
